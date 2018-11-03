@@ -1,0 +1,53 @@
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>Solat</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content padding cass="solat">
+    <ion-grid *ngIf="prayer">
+        <ion-row>
+          <ion-col width-50 offset-25>
+            <h2 class="location">Waktu Solat </h2>      
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-100>
+           <ion-list>
+            <ion-item text-wrap>
+              <strong>Lokasi : {{prayer.locations}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Tarikh : {{prayer.start}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Imsak : {{prayer.prayer_times.imsak}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Subuh : {{prayer.prayer_times.subuh}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Syuruk : {{prayer.prayer_times.syuruk}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Zohor : {{prayer.prayer_times.zohor}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Asar : {{prayer.prayer_times.asar}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Maghrib : {{prayer.prayer_times.maghrib}}</strong>
+            </ion-item>
+            <ion-item>
+              <strong>Isyak : {{prayer.prayer_times.isyak}}</strong>
+            </ion-item>
+
+           </ion-list>
+          </ion-col>
+        </ion-row>
+      
+      </ion-grid>
+</ion-content>
